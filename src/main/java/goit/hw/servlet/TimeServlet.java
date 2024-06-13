@@ -12,7 +12,7 @@ import java.io.IOException;
 @WebServlet(value = "/time")
 public class TimeServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
         String timeZone = req.getParameter("timezone");
         if (timeZone == null) timeZone = "UTC";
